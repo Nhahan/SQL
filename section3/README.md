@@ -33,3 +33,6 @@ CREATE TABLE <name>
 - 테이블의 컬럼 확인
 `show columns from <tablename>;`
 `DESC <tablename>;`
+
+- 테이블 제거
+`DROP TABLE <tablename>;`
