@@ -26,3 +26,10 @@ CREATE TABLE <name>
     column_name data_type,
   );
 ```
+
+- 테이블 확인
+`show tables;`
+
+- 테이블의 컬럼 확인
+`show columns from <tablename>;`
+`DESC <tablename>;`
