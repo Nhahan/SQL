@@ -17,3 +17,12 @@
 - 현재 데이터베이스 확인
 
 `SELECT dabatase();`
+
+- 테이블 생성
+```
+CREATE TABLE <name>
+  (
+    column_name data_type,
+    column_name data_type,
+  )
+```
