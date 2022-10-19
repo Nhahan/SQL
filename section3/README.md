@@ -1,6 +1,6 @@
 - 데이터베이스 확인
 
-`show databases`
+`show databases;`
 
 - 데이터베이스 생성
 
@@ -24,5 +24,5 @@ CREATE TABLE <name>
   (
     column_name data_type,
     column_name data_type,
-  )
+  );
 ```
