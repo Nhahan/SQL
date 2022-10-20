@@ -1,0 +1,21 @@
+- 데이터 삽입
+
+```
+INSERT INTO <tablename>(column, column)
+VALUES (value, value);
+```
+
+- 다중 데이터 삽입(bulk insert)
+
+```
+INSERT INTO <tablename>(column, column)
+VALUES (value, value)
+      ,(value, value)
+      ,(value, value);
+```
+
+- 데이터 선택
+
+`SELECT * FROM <tablename>`
+
+
