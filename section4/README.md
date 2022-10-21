@@ -18,4 +18,5 @@ VALUES (value, value)
 
 `SELECT * FROM <tablename>`
 
-
+- Warning 보기
+`SHOW WARNINGS`
