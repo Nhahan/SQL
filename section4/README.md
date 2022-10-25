@@ -16,11 +16,11 @@ VALUES (value, value)
 
 - 데이터 선택
 
-`SELECT * FROM <tablename>`
+`SELECT * FROM <tablename>;`
 
 - Warning 보기
 
-`SHOW WARNINGS`
+`SHOW WARNINGS;`
 
 - Default 설정
 
@@ -29,7 +29,7 @@ CREATE TABLE <tablename>
   (
     <columnname> (value, value) DEFAULT (value),
     <columnname> (value, value) DEFAULT (value)
-  )
+  );
 ```
 
 - Default 설정 with Not Null condition (Null을 허용하지 않음)
@@ -39,5 +39,17 @@ CREATE TABLE <tablename>
   (
     <columnname> (value, value) NOT NULL DEFAULT (value),
     <columnname> (value, value) NOT NULL DEFAULT (value)
-  )
+  );
+```
+
+- PRIMARY KEY 설정
+
+```
+CREATE TABLE cats 
+  (
+    cat_id INT NOT NULL,
+    name VARCHAR(100),
+    age INT,
+    PRIMARY KEY(cat_id)
+  );
 ```
