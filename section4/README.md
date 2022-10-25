@@ -31,3 +31,13 @@ CREATE TABLE <tablename>
     <columnname> (value, value) DEFAULT (value)
   )
 ```
+
+- Default 설정 with Not Null condition (Null을 허용하지 않음)
+
+```
+CREATE TABLE <tablename>
+  (
+    <columnname> (value, value) NOT NULL DEFAULT (value),
+    <columnname> (value, value) NOT NULL DEFAULT (value)
+  )
+```
