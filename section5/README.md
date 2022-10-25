@@ -11,3 +11,7 @@
 - Aliases
 
 `SELECT name AS 'cat name' breed AS 'kitty breed' FROM cats;`
+
+- UPDATE 절
+
+`UPDATE cats SET breed = 'Shofthair WHERE breed = 'Tabby';`
