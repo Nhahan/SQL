@@ -21,3 +21,13 @@ VALUES (value, value)
 - Warning 보기
 
 `SHOW WARNINGS`
+
+- Default 설정
+
+```
+CREATE TABLE <tablename>
+  (
+    <columnname> (value, value) DEFAULT (value),
+    <columnname> (value, value) DEFAULT (value)
+  )
+```
