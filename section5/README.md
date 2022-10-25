@@ -7,3 +7,7 @@
 - WHERE 절
 
 `SELECT * FROM cats WHERE age=4;`
+
+- Aliases
+
+`SELECT name AS 'cat name' breed AS 'kitty breed' FROM cats;`
