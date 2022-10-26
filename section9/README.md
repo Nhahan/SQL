@@ -23,3 +23,22 @@ SELECT CONCAT('In ', released_year, ' ', COUNT(*), ' book(s) released') AS year
   FROM books 
   GROUP BY released_year;
 ```
+
+- MIN or MAX with subquery
+
+```
+SELECT * FROM books 
+WHERE pages = (SELECT Min(pages) 
+                FROM books);
+```
+
+- MIN or MAX with GROUP BY
+
+```
+SELECT author_fname, 
+       author_lname, 
+       Min(released_year) 
+FROM   books 
+GROUP  BY author_lname, 
+          author_fname;
+```
