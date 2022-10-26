@@ -22,3 +22,15 @@ FROM books ORDER BY 2;
 SELECT author_fname, author_lname FROM books 
 ORDER BY author_lname, author_fname;
 ```
+
+- LIMIT
+
+```
+SELECT tite, released_year from books
+ORDER BY released_year DESC LIMIT 10;
+```
+
+```
+SELECT tite, released_year from books
+ORDER BY released_year DESC LIMIT 5, 10; // LIMIT (shift, count)
+```
