@@ -54,3 +54,9 @@ GROUP BY
     author_lname,
     author_fname;
 ```
+
+- AVG
+
+```SELECT released_year, AVG(stock_quantity) 
+FROM books 
+GROUP BY released_year;```
