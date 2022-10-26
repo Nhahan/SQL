@@ -47,3 +47,32 @@ LEFT JOIN orders
 GROUP BY customers.id
 ORDER BY total_spent;
 ```
+
+- RIGHT JOIN
+
+```
+SELECT 
+    IFNULL(first_name,'MISSING') AS first, 
+    IFNULL(last_name,'USER') as last, 
+    order_date, 
+    amount, 
+    SUM(amount)
+FROM customers
+RIGHT JOIN orders
+    ON customers.id = orders.customer_id
+GROUP BY first_name, last_name;
+```
+
+- ON DELETE CASCADE
+
+```
+CREATE TABLE orders(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_date DATE,
+    amount DECIMAL(8,2),
+    customer_id INT,
+    FOREIGN KEY(customer_id) 
+        REFERENCES customers(id)
+        ON DELETE CASCADE
+); // 외래키에 ON DELETE CASCADE
+```
