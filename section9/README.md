@@ -59,4 +59,5 @@ GROUP BY
 
 ```SELECT released_year, AVG(stock_quantity) 
 FROM books 
-GROUP BY released_year;```
+GROUP BY released_year;
+```
