@@ -26,10 +26,24 @@ SELECT * FROM customers, orders
 WHERE customers.id = orders.customer_id;
 ```
  
-- EXPLICIT INNER JOINS
+- EXPLICIT INNER JOIN
 
 ```
 SELECT * FROM customers
 JOIN orders
     ON customers.id = orders.customer_id;
+```
+
+- LEFT JOIN
+
+```
+SELECT 
+    first_name, 
+    last_name,
+    IFNULL(SUM(amount), 0) AS total_spent
+FROM customers
+LEFT JOIN orders
+    ON customers.id = orders.customer_id
+GROUP BY customers.id
+ORDER BY total_spent;
 ```
