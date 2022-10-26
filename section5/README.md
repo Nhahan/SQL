@@ -14,4 +14,10 @@
 
 - UPDATE 절
 
-`UPDATE cats SET breed = 'Shofthair WHERE breed = 'Tabby';`
+`UPDATE cats SET breed = 'Shorthair WHERE breed = 'Tabby';`
+
+`UPDATE cats SET age=14 WHERE name='Misty';`
+
+- DELETE 절
+
+`DELETE FROM cats WHERE name='Egg';`
