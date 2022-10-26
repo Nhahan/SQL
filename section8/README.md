@@ -34,3 +34,17 @@ ORDER BY released_year DESC LIMIT 10;
 SELECT tite, released_year from books
 ORDER BY released_year DESC LIMIT 5, 10; // LIMIT (shift, count)
 ```
+
+- LIKE
+
+`SELECT title FROM books WHERE  title LIKE 'the';`
+
+`SELECT title FROM books WHERE  title LIKE '%the';`
+
+`SELECT title FROM books WHERE title LIKE '%the%';`
+
+`SELECT title, stock_quantity FROM books WHERE stock_quantity LIKE '____';`
+ 
+`SELECT title, stock_quantity FROM books WHERE stock_quantity LIKE '__';`
+ 
+`(235)234-0987 LIKE '(___)___-____'`
