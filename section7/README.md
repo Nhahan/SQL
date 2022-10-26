@@ -36,3 +36,19 @@ SELECT CONCAT
     ) AS 'short title'
 FROM books;
 ```
+
+- REPLACE
+
+```
+SELECT REPLACE(title, 'e ', '3') FROM books;
+```
+
+```
+SELECT
+   CONCAT
+   (
+       SUBSTRING(title, 1, 10),
+       '...'
+   ) AS 'short title'
+FROM books;
+```
